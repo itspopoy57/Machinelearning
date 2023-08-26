@@ -1,0 +1,8 @@
+how to save this on the computer (model download or any other file from google colab)
+you can go to the files tab and right click on the file youre after the click download
+
+use code which we are going to do below
+
+#download a file from google colab
+from google.colab import files 
+files.download("/content/almost_perfect_prediction_xamp1")

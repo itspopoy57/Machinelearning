@@ -18,7 +18,7 @@ prompt = PromptTemplate(
 
 chain = LLMChain(llm = llm, prompt=prompt)
 output = chain.run({'virus':'amoeba', 'language': 'french'})
-#is you need only the var 1 which is the virus and dont care about the langauge
+#if you need only the var 1 which is the virus and dont care about the langauge
 #output = chain.run('amoeba')
 
   print(output)

@@ -286,3 +286,20 @@ def calculate_results(y_true, y_pred):
                   "recall": model_recall,
                   "f1": model_f1}
   return model_results
+
+
+from sklearn.metrics import accuracy_score, precision_recall_fscore_support
+
+def calculate_results(y_true,y_pred ):
+  """
+  calculates model accuracy, precision, refcall and f1 score of the binary classification
+  """
+  #calculate model accuracy
+  model_accuracy = accuracy_score(y_true, y_pred)
+  #precision
+  model_predicision, model_recall, model_f1, _ =precision_recall_fscore_support
+  model_results = {"accuracy" : model_accuracy,
+                   "precision": model_predicision,
+                   "recall": model_recall,
+                   "f1": model_f1}
+  return model_results

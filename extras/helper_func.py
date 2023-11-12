@@ -295,7 +295,7 @@ def calculate_results(y_true,y_pred ):
   calculates model accuracy, precision, refcall and f1 score of the binary classification
   """
   #calculate model accuracy
-  model_accuracy = accuracy_score(y_true, y_pred)
+  model_accuracy = accuracy_score(y_true, y_pred) * 100
   #precision
   model_predicision, model_recall, model_f1, _ =precision_recall_fscore_support
   model_results = {"accuracy" : model_accuracy,
